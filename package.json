@@ -1,0 +1,68 @@
+{
+  "name": "comprala",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write src/",
+    "stylelint": "stylelint --fix ./src/**/*.scss'",
+    "prepare": "husky",
+    "tsc": "tsc",
+    "getSupaTypes": "node ./src/scripts/getSupabaseTypes.js"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
+    "@supabase/supabase-js": "^2.45.4",
+    "antd-mobile": "^5.37.1",
+    "axios": "^1.7.7",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.1.1",
+    "@eslint/js": "^9.10.0",
+    "@faker-js/faker": "^9.0.1",
+    "@types/node": "^22.5.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.10.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.36.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "msw": "^2.4.8",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "stylelint": "^16.9.0",
+    "stylelint-config-clean-order": "^6.1.0",
+    "stylelint-config-recommended": "^14.0.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-order": "^6.0.4",
+    "supabase": "^1.192.5",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
+    "typescript-plugin-css-modules": "^5.1.0",
+    "vite": "^5.4.1",
+    "vite-tsconfig-paths": "^5.0.1"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --cache --fix",
+    "*.scss": "stylelint --fix",
+    "*.src/": "prettier --write"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}
