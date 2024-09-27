@@ -25,7 +25,7 @@ function App() {
 
       <div className='card'>
         <Button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          count is<span>{count}</span>
         </Button>
       </div>
 
