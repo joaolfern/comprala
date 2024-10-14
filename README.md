@@ -34,7 +34,7 @@ To run Comprala locally, follow these steps:
   ```
 4. Start the development server:
   ```bash
-  npm start
+  yarn dev
   ```
 5. Open your browser and go to `http://localhost:3000` to see the app in action.
 
