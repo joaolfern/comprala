@@ -17,6 +17,7 @@
     "getSupaTypes": "node ./src/scripts/getSupabaseTypes.js"
   },
   "dependencies": {
+    "@marsidev/react-turnstile": "^1.0.2",
     "@reduxjs/toolkit": "^2.2.7",
     "@supabase/supabase-js": "^2.45.4",
     "antd-mobile": "^5.37.1",
@@ -31,7 +32,7 @@
   "devDependencies": {
     "@eslint/compat": "^1.1.1",
     "@eslint/js": "^9.10.0",
-    "@faker-js/faker": "^9.0.1",
+    "@faker-js/faker": "^9.0.3",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
@@ -50,7 +51,7 @@
     "husky": "^9.1.6",
     "jsdom": "^25.0.1",
     "lint-staged": "^15.2.10",
-    "postcss": "^8.4.47",
+    "msw": "^2.4.10",
     "prettier": "^3.3.3",
     "stylelint": "^16.9.0",
     "stylelint-config-clean-order": "^6.1.0",
@@ -69,5 +70,10 @@
     "*.{ts,tsx}": "eslint --cache --fix",
     "*.scss": "stylelint --fix",
     "*.src/": "prettier --write"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }

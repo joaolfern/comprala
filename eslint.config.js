@@ -8,7 +8,7 @@ import pluginReact from 'eslint-plugin-react'
 import { fixupPluginRules } from '@eslint/compat'
 
 export default tseslint.config(
-  { ignores: ['dist', 'openapi-gen'] },
+  { ignores: ['dist'] },
   {
     extends: [
       js.configs.recommended,
